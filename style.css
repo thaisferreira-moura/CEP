@@ -1,0 +1,52 @@
+@import url("./global.css");
+
+/* HEADER */
+
+header{
+    width: 100%;
+    padding: 24px 0;
+    background: var(--white);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 97px;
+    height: 82px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu a{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: var(--primary);
+}
+
+
+.btn-login{
+    background: var(--primary);
+    color: var(--black);
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-login:hover{
+    opacity: .9;
+}
