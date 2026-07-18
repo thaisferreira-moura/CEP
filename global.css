@@ -1,0 +1,134 @@
+/* ===========================
+   IMPORTAÇÃO DA FONTE
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+/* ===========================
+   VARIÁVEIS
+=========================== */
+
+:root{
+
+    /* Colors */
+    --primary: #B0CD1F;
+    --white: #FFFFFF;
+    --black: #333231;
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+
+    --fs-body: 16px;
+    --fs-button: 16px;
+
+    --fs-h1: 60px;
+    --fs-h2: 48px;
+    --fs-h3: 40px;
+    --fs-h4: 25px;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+}
+
+/* ===========================
+   TIPOGRAFIA
+=========================== */
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+h3{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+h4{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+p{
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: var(--fs-button);
+    font-weight: var(--fw-medium);
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    opacity: .9;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
